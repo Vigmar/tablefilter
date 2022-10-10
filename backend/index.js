@@ -51,6 +51,7 @@ const client = new Client({
 
 client.connect()
 
+//если есть таблица - удаляем, создаем, записываем 100 строк в таблицу
 let sql_drop = 'DROP TABLE IF EXISTS public.welbextest';
 let sql_create = 'CREATE TABLE IF NOT EXISTS public.welbextest (date date,name text,amount bigint,distance numeric)';
 
